@@ -21,6 +21,17 @@ The tech is listed a bit more below:
 - High enough credentials to create required resources
 - **Recommended**: Serverless Framework installed on your system
 
+## Set up CosmosDB (Gremlin API)
+
+This repo does not currently cover setting up the required CosmosDB (Gremlin) database on Azure.
+
+It should be pretty easy if you follow the quickstarts at the bottom of this document. You only need to:
+
+- Go to CosmosDB
+- Create a CosmosDB (Gremlin) database
+- Create a container (use `pk` as partition key)
+- Pick out your primary key and set that, along with your database/container names, in `src/config.ts`.
+
 ## Install
 
 Install dependencies with `npm install` or `yarn add`.
